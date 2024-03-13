@@ -1,0 +1,128 @@
+body {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Evitar que el contenido se salga de la vista */
+}
+
+.cover {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 500px;
+    margin-top: 12vh;
+}
+
+.text1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.text2 {
+    font-size: 25px;
+}
+
+.text3 {
+    font-size: 18px;
+}
+
+.ingresar {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.menu button {
+    background-color: red;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.container3 img {
+    width: 100%;
+    width: 400px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu img{
+        display: none;
+    }
+    .menu button{
+        margin: 5px;
+    }
+    .content {
+        height: auto;
+    }
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .descripcion{
+        margin: 10px;
+        text-align: center;
+    }
+    .descripcion h4 {
+        font-size: medium;
+    }
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .ingresar {
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .text1{
+        font-size: 30px;
+    }
+    .text2{
+        font-size: 18px;
+    }
+    .text3{
+        font-size: 12px;
+    }
+    img {
+        max-width: 50vh;
+        height: auto; 
+    }
+}
